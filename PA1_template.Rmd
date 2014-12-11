@@ -130,6 +130,8 @@ The mean total number of steps taken per day is now `r formatC(mean.total.step2,
 and the median is `r formatC(median.total.step2, format="d")`.
 Previous values were `r formatC(mean.total.step, format = "d")` for the mean and
 `r formatC(median.total.step, format = "d")` for the median.
+Therefore, imputing missing values with our strategies increases both the mean and median, and
+at the same time brings them closer to each other.
 
 ## Differences in activity patterns between weekdays and weekends
 
@@ -161,7 +163,10 @@ xyplot(steps ~ interval | dayType, data = agg.data.per.daytype, type = "l", layo
 
 ```
 
+Here we can observe that :
 
+* The individual tends to get up and go to sleep latter on weekend compare to weekday
+* The activity seems in average more intense during weekend
 
 
 

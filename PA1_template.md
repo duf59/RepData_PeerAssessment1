@@ -146,6 +146,8 @@ The mean total number of steps taken per day is now 10766
 and the median is 10766.
 Previous values were 9354 for the mean and
 10395 for the median.
+Therefore, imputing missing values with our strategies increases both the mean and median, and
+at the same time brings them closer to each other.
 
 ## Differences in activity patterns between weekdays and weekends
 
@@ -179,7 +181,10 @@ xyplot(steps ~ interval | dayType, data = agg.data.per.daytype, type = "l", layo
 
 ![plot of chunk weekday weekend](figure/weekday weekend-1.png) 
 
+Here we can observe that :
 
+* The individual tends to get up and go to sleep latter on weekend compare to weekday
+* The activity seems in average more intense during weekend
 
 
 
